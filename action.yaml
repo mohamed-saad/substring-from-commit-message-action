@@ -1,10 +1,14 @@
 name: 'Substring Commit Message'
 description: 'Extract string from last commit message'
 inputs:
-  pattern-to-search:  # id of input
+  pattern-to-search:
     description: 'The pattern to look for in the commit message'
     required: true
     default: 'something'
+  message:
+    description: 'The commit message'
+    required: true
+    default: 'look for something among several other things'
 outputs:
   match: # id of output
     description: 'The matched string or "null" if no match was found'
